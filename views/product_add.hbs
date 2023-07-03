@@ -1,0 +1,45 @@
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+<h1 class="h3 mb-0 text-gray-800">Product Add </h1>
+
+<a href="/Products/Product-list" class="d-none d-sm-inline-block btn btn-primary">
+<i class="fas fa-folder-plus text-white-50"></i> Product List</a>    
+</div>
+ 
+
+<form action="/Products/Product_save" method="POST"> 
+<div class="row">
+   <div class="col-lg-7">
+      <div class="p-7">
+         <div class="form-group col-sm-12">
+            <input type="hidden" value="{{productedit.id}}" id="uid" name="uid"> 
+            <input type="text" class="form-control form-control-user" value="{{productedit.product_name}}" id="productname" name="productname" placeholder="Enter Product Name">
+         </div>
+         <div class="form-group col-sm-12">
+            <input type="text" class="form-control form-control-user" value="{{productedit.product_company}}" id="product_comp_nm" name="product_comp_nm" placeholder="Enter Product Company Name">
+         </div>
+         <div class="form-group col-sm-12">
+            <input type="text" class="form-control form-control-user" value="{{productedit.manufacture_country}}" id="manufacture_country" name="manufacture_country" placeholder="Enter Manufacture Country">
+         </div>
+         <div class="form-group col-sm-12">   
+            <input type="text" class="form-control form-control-user" value="{{productedit.manufacture_city}}" id="manufacture_city" name="manufacture_city" placeholder="Enter Manufacture City">
+         </div>
+         <div class="form-group ">
+            <div class="col-sm-4">
+               <input type="text" class="form-control form-control-user" value="{{productedit.manufacture_month}}" id="manufacture_month" name="manufacture_month" placeholder="Manufacture Month">
+            </div>
+            <br/>
+            <div class="col-sm-4">
+               <input type="text" class="form-control form-control-user" value="{{productedit.manufacture_year}}" id="manufacture_year" name="manufacture_year" placeholder="Manufacture Year">
+            </div>
+         </div>
+         <div class="form-group col-sm-4">
+            <input type="text" class="form-control form-control-user" value="{{productedit.product_rate}}" id="product_rate" name="product_rate" placeholder="Enter Product Rate">
+         </div>
+      </div>
+      <div class="col-sm-12 align-center">
+         <button class="btn btn-primary" type="submit"> Product Add  </button>
+      </div>
+   </div>
+</div> 
+</form>
+ 
